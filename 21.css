@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(248, 80%, 14%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.empty{
+    background-color: hsl(267, 90%, 40%);
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px hsl(235, 99%, 42%);
+    
+    /* border: solid black; */
+}
+.fill{
+    background-image:url("21.png");
+    height: 145px;
+    width: 145px;
+    cursor:pointer;
+}
+.hold{
+    border: solid 5px hsl(267, 90%, 40%);
+}
+.hovered{
+    background-color:hsl(312, 100%, 34%);
+    border: solid 3px hsl(339, 78%, 38%);
+    
+}
+@media(max-width:800px){
+    body{
+        flex-direction:column;
+    }
+}
